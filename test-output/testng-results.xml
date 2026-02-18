@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-24T19:31:08 IST" name="Default suite" finished-at="2024-11-24T19:31:28 IST" duration-ms="20164">
+    <groups>
+      <group name="Purchase">
+        <method signature="SubmitOrder.submitOrder(java.util.HashMap)[pri:0, instance:Testing.SubmitOrder@ffaa6af]" name="submitOrder" class="Testing.SubmitOrder"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2024-11-24T19:31:08 IST" name="Default test" finished-at="2024-11-24T19:31:28 IST" duration-ms="20164">
+      <class name="Testing.SubmitOrder">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Testing.SubmitOrder@ffaa6af]" started-at="2024-11-24T19:31:08 IST" name="launchApplication" finished-at="2024-11-24T19:31:10 IST" duration-ms="2290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:Testing.SubmitOrder@ffaa6af]" started-at="2024-11-24T19:31:10 IST" name="submitOrder" data-provider="getData" finished-at="2024-11-24T19:31:15 IST" duration-ms="4549" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=india, productname=ZARA COAT 3, password=RAYben123*, userName=ray@ben.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Testing.SubmitOrder@ffaa6af]" started-at="2024-11-24T19:31:15 IST" name="closeBrowser" finished-at="2024-11-24T19:31:15 IST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Testing.SubmitOrder@ffaa6af]" started-at="2024-11-24T19:31:15 IST" name="launchApplication" finished-at="2024-11-24T19:31:18 IST" duration-ms="2712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:Testing.SubmitOrder@ffaa6af]" started-at="2024-11-24T19:31:18 IST" name="submitOrder" data-provider="getData" finished-at="2024-11-24T19:31:22 IST" duration-ms="4674" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=Australia, productname=ADIDAS ORIGINAL, password=RAYben123*, userName=hi@hello.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Testing.SubmitOrder@ffaa6af]" started-at="2024-11-24T19:31:22 IST" name="closeBrowser" finished-at="2024-11-24T19:31:23 IST" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Testing.SubmitOrder@ffaa6af]" started-at="2024-11-24T19:31:23 IST" name="launchApplication" finished-at="2024-11-24T19:31:24 IST" duration-ms="1726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="verifyOrderHistory(java.util.HashMap)[pri:0, instance:Testing.SubmitOrder@ffaa6af]" started-at="2024-11-24T19:31:24 IST" name="verifyOrderHistory" data-provider="getData" finished-at="2024-11-24T19:31:25 IST" depends-on-methods="Testing.SubmitOrder.submitOrder" duration-ms="873" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=india, productname=ZARA COAT 3, password=RAYben123*, userName=ray@ben.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrderHistory -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Testing.SubmitOrder@ffaa6af]" started-at="2024-11-24T19:31:25 IST" name="closeBrowser" finished-at="2024-11-24T19:31:25 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Testing.SubmitOrder@ffaa6af]" started-at="2024-11-24T19:31:25 IST" name="launchApplication" finished-at="2024-11-24T19:31:27 IST" duration-ms="1483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="verifyOrderHistory(java.util.HashMap)[pri:0, instance:Testing.SubmitOrder@ffaa6af]" started-at="2024-11-24T19:31:27 IST" name="verifyOrderHistory" data-provider="getData" finished-at="2024-11-24T19:31:28 IST" depends-on-methods="Testing.SubmitOrder.submitOrder" duration-ms="903" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=Australia, productname=ADIDAS ORIGINAL, password=RAYben123*, userName=hi@hello.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrderHistory -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Testing.SubmitOrder@ffaa6af]" started-at="2024-11-24T19:31:28 IST" name="closeBrowser" finished-at="2024-11-24T19:31:28 IST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Testing.SubmitOrder -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
