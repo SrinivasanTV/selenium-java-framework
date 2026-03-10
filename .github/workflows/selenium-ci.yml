@@ -22,7 +22,7 @@ jobs:
           java-version: '17'
           cache: maven
 
-      - name: Recreate expected S: workspace path
+      - name: "Recreate expected S: workspace path"
         shell: powershell
         run: |
           New-Item -ItemType Directory -Force -Path "S:\eclipse" | Out-Null
@@ -33,7 +33,7 @@ jobs:
 
       - name: Run regression suite in headless Chrome
         shell: powershell
-        working-directory: S:\eclipse\SeleniumFramework
+        working-directory: "S:\\eclipse\\SeleniumFramework"
         run: mvn -B clean test -PRegression -Dbrowser=chromeheadless
 
       - name: Upload reports
