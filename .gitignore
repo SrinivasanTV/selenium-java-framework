@@ -1,0 +1,15 @@
+# Maven build output
+target/
+
+# TestNG and generated test reports
+test-output/
+reports/
+
+# Eclipse project metadata
+.classpath
+.project
+.settings/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
