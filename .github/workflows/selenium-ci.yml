@@ -25,6 +25,7 @@ jobs:
       - name: "Recreate expected S: workspace path"
         shell: powershell
         run: |
+          cmd /c subst S: "$env:RUNNER_TEMP"
           New-Item -ItemType Directory -Force -Path "S:\eclipse" | Out-Null
           if (Test-Path "S:\eclipse\SeleniumFramework") {
             Remove-Item -Recurse -Force "S:\eclipse\SeleniumFramework"
